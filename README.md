@@ -21,10 +21,13 @@ accounts = [
 
            ]
 
-MAX_FILENAME_LENGTH = 245
+MAX_FILENAME_LENGTH = 255
+MAX_FILENAME_EXTENSION_LENGTH = 6
+FILENAME_RE = '[^\w \.\-@\[\]]'
+DEFAULT_EXTENSION = ".txt"
 
-import os
-#os.chdir("/tmp")   # change working directory
+# set working directory here:
+WORKING_DIR = "/media/usb/"
 
 </code>
 </pre>
